@@ -1,0 +1,21 @@
+{
+  "name": "Trac Ticket Centralizer",
+  "version": "0.6",
+
+  "description": "It makes the ticket container move to the center of your screen",
+
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*/ticket/*",
+        "http://*/*/newticket*"
+        ],
+        
+      "js": ["core.js"]
+    }
+  ],
+
+  "permissions": [
+    "http://*/"
+    ]
+}
